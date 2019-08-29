@@ -5,5 +5,7 @@
     <file url="file://$PROJECT_DIR$/modules" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modules/utils-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/webapps" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webapps/main-site" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webapps/manage-site" charset="UTF-8" />
   </component>
 </project>

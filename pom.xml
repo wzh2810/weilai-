@@ -9,38 +9,36 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
-
-  <distributionManagement>
-    <site>
-      <id>website</id>
-      <url>scp://webhost.company.com/www/website</url>
-    </site>
-  </distributionManagement>
+  <name>weilai-platform</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
   </properties>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.0.0.RELEASE</version>
-
   </parent>
 
+  <modules>
+    <module>modules</module>
+    <module>webapps</module>
+  </modules>
+
   <dependencies>
-    <!-- SpringBoot web 核心组件 -->
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!-- SpringBoot对Redis支持 -->
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-redis</artifactId>
     </dependency>
+
   </dependencies>
 
   <build>

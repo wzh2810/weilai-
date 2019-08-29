@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="utils-service" />
+        <module name="main-site" />
+        <module name="manage-site" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="utils-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
