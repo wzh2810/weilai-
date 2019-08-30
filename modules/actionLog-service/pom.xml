@@ -9,11 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>common-service</artifactId>
+    <artifactId>actionLog-service</artifactId>
     <packaging>pom</packaging>
-
-  <!--  &lt;!&ndash; FIXME change it to the project's website &ndash;&gt;
-    <url>http://www.example.com</url>-->
 
     <dependencies>
         <dependency>
@@ -23,6 +20,7 @@
         </dependency>
 
     </dependencies>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

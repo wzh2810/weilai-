@@ -1,10 +1,10 @@
-package com.weilai.actionLog.action;
+package com.weilai.action;
 
 
-import com.weilai.actionLog.action.base.BaseActionMap;
-import com.weilai.actionLog.action.base.ResetLog;
-import com.weilai.actionLog.action.model.BusinessMethod;
-import com.weilai.actionLog.action.model.LoginMethod;
+import com.weilai.action.base.BaseActionMap;
+import com.weilai.action.base.ResetLog;
+import com.weilai.action.model.BusinessMethod;
+import com.weilai.action.model.LoginMethod;
 import com.weilai.common.utils.SpringContextUtil;
 import com.weilai.common.vo.ResultVo;
 import com.weilai.domain.ActionLog;

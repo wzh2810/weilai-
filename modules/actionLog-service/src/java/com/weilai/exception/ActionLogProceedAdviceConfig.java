@@ -1,4 +1,4 @@
-package com.weilai.actionLog.exception;
+package com.weilai.exception;
 
 
 import com.weilai.common.exception.advice.ResultExceptionAdvice;

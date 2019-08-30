@@ -1,11 +1,11 @@
-package com.weilai.actionLog.annotation;
+package com.weilai.annotation;
 
 
-import com.weilai.actionLog.action.base.BaseActionMap;
-import com.weilai.actionLog.action.base.ResetLog;
-import com.weilai.actionLog.action.model.ActionModel;
-import com.weilai.actionLog.action.model.BusinessMethod;
-import com.weilai.actionLog.action.model.BusinessType;
+import com.weilai.action.base.BaseActionMap;
+import com.weilai.action.base.ResetLog;
+import com.weilai.action.model.ActionModel;
+import com.weilai.action.model.BusinessMethod;
+import com.weilai.action.model.BusinessType;
 import com.weilai.common.utils.SpringContextUtil;
 import com.weilai.service.ActionLogService;
 import com.weilai.domain.ActionLog;
@@ -38,7 +38,7 @@ public class ActionLogAop {
 
     private final static String DEFAULT_ACTION_NAME = "default";
 
-    @Pointcut("@annotation(com.weilai.actionLog.annotation.ActionLog)")
+    @Pointcut("@annotation(com.weilai.annotation.ActionLog)")
     public void actionLog() {};
 
     @Around("actionLog()")
@@ -50,8 +50,8 @@ public class ActionLogAop {
         /* 读取ActionLog注解消息 */
         Method targetMethod = ((MethodSignature)(point.getSignature())).getMethod();
 
-        com.weilai.actionLog.annotation.ActionLog anno =
-                targetMethod.getAnnotation(com.weilai.actionLog.annotation.ActionLog.class);
+        com.weilai.annotation.ActionLog anno =
+                targetMethod.getAnnotation(com.weilai.annotation.ActionLog.class);
         // 获取name值
         String name = anno.name();
         // 获取message值

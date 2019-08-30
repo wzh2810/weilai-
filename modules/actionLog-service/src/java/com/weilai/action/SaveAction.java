@@ -1,8 +1,8 @@
-package com.weilai.actionLog.action;
+package com.weilai.action;
 
 
-import com.weilai.actionLog.action.base.BaseActionMap;
-import com.weilai.actionLog.action.base.ResetLog;
+import com.weilai.action.base.BaseActionMap;
+import com.weilai.action.base.ResetLog;
 import com.weilai.common.utils.EntityBeanUtil;
 import com.weilai.common.utils.HttpServletUtil;
 import com.weilai.domain.ActionLog;

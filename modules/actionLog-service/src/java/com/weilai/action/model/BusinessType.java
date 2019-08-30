@@ -1,4 +1,4 @@
-package com.weilai.actionLog.action.model;
+package com.weilai.action.model;
 
 
 import com.weilai.enums.ActionLogEnum;
@@ -9,32 +9,33 @@ import lombok.Getter;
  * @date 2018/10/15
  */
 @Getter
-public class BusinessMethod extends ActionModel{
+public class BusinessType extends ActionModel{
+
     /** 日志名称 */
     protected String name;
 
-    /** 行为方法名 */
-    protected String method;
+    /** 日志消息 */
+    protected String message;
 
     /** 日志类型 */
     protected Byte type = ActionLogEnum.BUSINESS.getCode();
 
     /**
-     * 只构建行为方法名，日志名称由日志注解name定义
-     * @param method 行为方法名
+     * 只构建日志消息，日志名称有日志注解name定义
+     * @param message 日志消息
      */
-    public BusinessMethod(String method) {
-        this.method = method;
+    public BusinessType(String message) {
+        this.message = message;
     }
 
     /**
-     * 构建日志名称和行为方法名
+     * 构建日志名称和日志消息
      * @param name 日志名称
-     * @param method 行为方法名
+     * @param message 日志消息
      */
-    public BusinessMethod(String name, String method) {
+    public BusinessType(String name, String message) {
         this.name = name;
-        this.method = method;
+        this.message = message;
     }
 
     @Override
@@ -47,12 +48,12 @@ public class BusinessMethod extends ActionModel{
         this.name = name;
     }
 
-    public String getMethod() {
-        return method;
+    public String getMessage() {
+        return message;
     }
 
-    public void setMethod(String method) {
-        this.method = method;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     @Override

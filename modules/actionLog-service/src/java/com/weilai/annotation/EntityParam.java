@@ -1,4 +1,4 @@
-package com.weilai.actionLog.annotation;
+package com.weilai.annotation;
 
 import java.lang.annotation.*;
 

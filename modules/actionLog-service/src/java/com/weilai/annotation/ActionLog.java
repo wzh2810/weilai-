@@ -1,8 +1,8 @@
-package com.weilai.actionLog.annotation;
+package com.weilai.annotation;
 
 
 
-import com.weilai.actionLog.action.base.BaseActionMap;
+import com.weilai.action.base.BaseActionMap;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

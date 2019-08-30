@@ -1,8 +1,8 @@
-package com.weilai.actionLog.action.base;
+package com.weilai.action.base;
 
 
-import com.weilai.actionLog.action.model.BusinessMethod;
-import com.weilai.actionLog.action.model.BusinessType;
+import com.weilai.action.model.BusinessMethod;
+import com.weilai.action.model.BusinessType;
 
 import java.util.HashMap;
 

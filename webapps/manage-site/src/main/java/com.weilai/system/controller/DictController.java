@@ -1,10 +1,10 @@
 package com.weilai.system.controller;
 
 
-import com.weilai.actionLog.action.SaveAction;
-import com.weilai.actionLog.action.StatusAction;
-import com.weilai.actionLog.annotation.ActionLog;
-import com.weilai.actionLog.annotation.EntityParam;
+import com.weilai.action.SaveAction;
+import com.weilai.action.StatusAction;
+import com.weilai.annotation.ActionLog;
+import com.weilai.annotation.EntityParam;
 import com.weilai.common.enums.ResultEnum;
 import com.weilai.common.enums.StatusEnum;
 import com.weilai.common.exception.ResultException;

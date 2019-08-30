@@ -1,7 +1,7 @@
-package com.weilai.actionLog.action.base;
+package com.weilai.action.base;
 
 
-import com.weilai.actionLog.annotation.EntityParam;
+import com.weilai.annotation.EntityParam;
 import com.weilai.common.enums.ResultEnum;
 import com.weilai.common.utils.EntityBeanUtil;
 import com.weilai.common.vo.ResultVo;

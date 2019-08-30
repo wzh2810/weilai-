@@ -17,6 +17,7 @@
     <modules>
         <module>system-service</module>
         <module>common-service</module>
+        <module>actionLog-service</module>
     </modules>
 
     <distributionManagement>

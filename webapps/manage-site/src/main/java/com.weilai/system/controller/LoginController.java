@@ -1,7 +1,7 @@
 package com.weilai.system.controller;
 
-import com.weilai.actionLog.action.UserAction;
-import com.weilai.actionLog.annotation.ActionLog;
+import com.weilai.action.UserAction;
+import com.weilai.annotation.ActionLog;
 import com.weilai.common.config.properties.ProjectProperties;
 import com.weilai.common.data.URL;
 import com.weilai.common.enums.ResultEnum;

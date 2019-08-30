@@ -1,4 +1,4 @@
-package com.weilai.actionLog.action.model;
+package com.weilai.action.model;
 
 import lombok.Getter;
 

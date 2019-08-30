@@ -1,8 +1,8 @@
-package com.weilai.actionLog.exception;
+package com.weilai.exception;
 
 
-import com.weilai.actionLog.action.SystemAction;
-import com.weilai.actionLog.annotation.ActionLog;
+import com.weilai.action.SystemAction;
+import com.weilai.annotation.ActionLog;
 import com.weilai.common.exception.advice.ExceptionAdvice;
 
 /**
