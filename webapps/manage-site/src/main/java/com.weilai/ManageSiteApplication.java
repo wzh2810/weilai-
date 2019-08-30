@@ -24,7 +24,7 @@ import java.util.concurrent.Executors;
 @EnableTransactionManagement
 @EnableAsync
 @EnableScheduling
-public class ManageSiteApplication extends SpringBootServletInitializer implements SchedulingConfigurer {
+public class ManageSiteApplication extends SpringBootServletInitializer  {
 
     public static void main(String[] args) {
         SpringApplication.run(ManageSiteApplication.class, args);
@@ -35,14 +35,5 @@ public class ManageSiteApplication extends SpringBootServletInitializer implemen
         return application.sources(ManageSiteApplication.class);
     }
 
-    @Override
-    public void configureTasks(ScheduledTaskRegistrar taskRegistrar) {
-        taskRegistrar.setScheduler(taskExecutor());
-    }
-
-    @Bean(destroyMethod = "shutdown")
-    public Executor taskExecutor() {
-        return Executors.newScheduledThreadPool(10);
-    }
 
 }
