@@ -10,23 +10,26 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.weilai</groupId>
     <artifactId>manage-site</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.weilai</groupId>
+            <artifactId>common-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.weilai</groupId>
+            <artifactId>system-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
     <packaging>war</packaging>
-
-    <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.tpl</include>
-                </includes>
-            </resource>
-        </resources>
-    </build>
 
 </project>

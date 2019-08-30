@@ -27,7 +27,7 @@ spring:
     hibernate:
       ddl-auto: update
     properties:
-      hibernate.dialect: com.linln.common.mysql.MySQLDialectUTF8
+      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
       hibernate.format_sql: false
     open-in-view: true
 
